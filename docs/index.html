@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Claude Code Drop-In Kit — 39 tested .claude/ files, not a PDF</title>
+<meta name="description" content="39 working Claude Code files: 10 subagents, 12 slash commands, 7 tested hooks, 4 skills, 6 CLAUDE.md templates. One command installs them. $20 one-time, single developer. Done-for-you setup from $249.">
+<link rel="canonical" href="https://p32929.github.io/claude-code-starter-kit/">
+<meta property="og:type" content="product">
+<meta property="og:title" content="Claude Code Drop-In Kit — 39 tested files">
+<meta property="og:description" content="Everyone else sells a PDF about Claude Code. This is the actual files. $20 one-time.">
+<meta property="og:url" content="https://p32929.github.io/claude-code-starter-kit/">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareApplication",
+"name":"Claude Code Drop-In Kit","applicationCategory":"DeveloperApplication",
+"operatingSystem":"macOS, Linux, Windows (WSL)",
+"description":"39 working .claude/ files for Claude Code: 10 subagents, 12 slash commands, 7 tested hooks, 4 skills, 6 CLAUDE.md templates.",
+"url":"https://p32929.github.io/claude-code-starter-kit/",
+"author":{"@type":"Person","name":"Fayaz Bin Salam","url":"https://github.com/p32929"},
+"offers":[{"@type":"Offer","name":"Lite (free, MIT)","price":"0","priceCurrency":"USD","url":"https://github.com/p32929/claude-code-starter-kit"},
+{"@type":"Offer","name":"Full kit","price":"20","priceCurrency":"USD","url":"https://buymeacoffee.com/p32929","availability":"https://schema.org/InStock"},
+{"@type":"Offer","name":"Setup Sprint (done-for-you, one repo)","price":"249","priceCurrency":"USD","url":"https://buymeacoffee.com/p32929","availability":"https://schema.org/InStock"},
+{"@type":"Offer","name":"Team licence (whole organisation)","price":"499","priceCurrency":"USD","url":"https://buymeacoffee.com/p32929","availability":"https://schema.org/InStock"}]}
+</script>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#0d1117;color:#c9d1d9;font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:48px 20px 80px}
+h1{font-size:34px;line-height:1.2;margin:0 0 10px;color:#f0f6fc}
+h2{font-size:21px;margin:38px 0 12px;color:#f0f6fc;border-bottom:1px solid #21262d;padding-bottom:8px}
+h3{font-size:16px;margin:22px 0 6px;color:#f0f6fc}
+.sub{font-size:19px;color:#8b949e;margin:0 0 28px}
+code{background:#161b22;border:1px solid #30363d;border-radius:5px;padding:2px 6px;font-size:14px;color:#79c0ff}
+pre{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:14px;overflow:auto}
+pre code{border:0;background:none;padding:0;color:#c9d1d9}
+a{color:#58a6ff}
+.box{background:#161b22;border:1px solid #30363d;border-radius:10px;padding:22px;margin:26px 0}
+.price{font-size:40px;color:#f0f6fc;font-weight:700;line-height:1}
+.price span{font-size:15px;color:#8b949e;font-weight:400}
+.btn{display:inline-block;background:#238636;color:#fff!important;text-decoration:none;font-weight:600;
+padding:14px 26px;border-radius:8px;font-size:17px;margin:14px 0 6px;border:1px solid rgba(240,246,252,.1)}
+.btn:hover{background:#2ea043}
+.btn2{display:inline-block;background:#21262d;color:#c9d1d9!important;text-decoration:none;font-weight:600;
+padding:11px 20px;border-radius:8px;border:1px solid #30363d;margin-top:8px}
+.muted{color:#8b949e;font-size:14px}
+ul{padding-left:20px}li{margin:5px 0}
+.tag{display:inline-block;background:#161b22;border:1px solid #30363d;border-radius:20px;padding:3px 11px;font-size:13px;margin:3px 3px 3px 0;color:#8b949e}
+#dl{display:none;margin-top:14px;padding:16px;background:#0f2417;border:1px solid #238636;border-radius:8px}
+hr{border:0;border-top:1px solid #21262d;margin:38px 0}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>Claude Code Drop-In Kit</h1>
+<p class="sub">39 tested files you drop into <code>.claude/</code>. Not a PDF. Not a course.</p>
+
+<p><strong>Everyone else sells a guide about Claude Code. This is the actual files.</strong>
+One command installs them, you are using them thirty seconds later, and there is nothing to read first.</p>
+
+<div class="box">
+  <div class="price">$20 <span>one-time · one developer · unlimited projects · forever</span></div>
+  <p class="muted" style="margin:14px 0 0">Paid through Fayaz's Buy&nbsp;Me&nbsp;a&nbsp;Coffee page (Stripe, already live).
+  A coffee is $5 — <strong>set the number to 4</strong>, and put <strong>"CCDK"</strong> in the message so he knows what it was for.</p>
+  <a class="btn" href="https://buymeacoffee.com/p32929" target="_blank" rel="noopener">Buy the full kit — $20 (4 coffees) →</a>
+  <br>
+  <a class="btn2" href="#" id="paid">Already paid? Get your download →</a>
+  <div id="dl">
+    <strong>Thank you.</strong><br>
+    <a href="d/6daaa629600a311d7241e5b1/claude-code-drop-in-kit.zip" download>⬇ claude-code-drop-in-kit.zip</a> (60&nbsp;KB, 57 files)
+    <p class="muted" style="margin:10px 0 0">Unzip, then from your project root run <code>bash install.sh</code>
+    (or <code>bash install.sh --global</code> for every project). Restart Claude Code — hooks are only read at startup.</p>
+    <p class="muted" style="margin:8px 0 0">This link is yours. Please don't repost it — it is the whole shop.</p>
+  </div>
+  <p class="muted" style="margin:16px 0 0">Prefer to try first? The free <strong>Lite</strong> version is
+  <a href="https://github.com/p32929/claude-code-starter-kit">on GitHub, MIT licensed</a>.</p>
+</div>
+
+<h2>Want it fitted to your codebase instead?</h2>
+<p>The kit is generic on purpose. If you would rather not tune it yourself, these are done-for-you and I do all
+the work — you send a repo, you get files back that already know your stack, your scripts and your gotchas.</p>
+
+<div class="box">
+  <div class="price">$249 <span>Setup Sprint · one repo · delivered in 3 working days</span></div>
+  <ul>
+    <li>A <code>CLAUDE.md</code> written from <em>your</em> repo — real commands table, real gotchas, not a template.</li>
+    <li>Hooks wired to <em>your</em> toolchain (your typechecker, your formatter, your protected branches).</li>
+    <li>Up to 5 slash commands for the jobs your team actually repeats.</li>
+    <li>One round of revisions after you have used it for a week.</li>
+  </ul>
+  <a class="btn" href="https://buymeacoffee.com/p32929" target="_blank" rel="noopener">Book a Setup Sprint — $249 →</a>
+  <p class="muted" style="margin:10px 0 0">Set the coffee count to <strong>50</strong> ($250) and put
+  <strong>"SPRINT"</strong> plus your repo URL in the message, then email
+  <a href="mailto:fayazdevinbox@uberip.com?subject=CCDK%20Setup%20Sprint">fayazdevinbox@uberip.com</a> so I can start.</p>
+</div>
+
+<div class="box">
+  <div class="price">$499 <span>Team licence · your whole organisation · forever</span></div>
+  <ul>
+    <li>Everything in the kit, licensed for every developer in your company rather than one.</li>
+    <li>Internal redistribution allowed — put it in your own monorepo or template repo.</li>
+    <li>A Setup Sprint for one repo included.</li>
+  </ul>
+  <a class="btn" href="https://buymeacoffee.com/p32929" target="_blank" rel="noopener">Buy the Team licence — $499 →</a>
+  <p class="muted" style="margin:10px 0 0">Set the coffee count to <strong>100</strong> ($500) and put
+  <strong>"TEAM"</strong> plus your company name in the message, then email
+  <a href="mailto:fayazdevinbox@uberip.com?subject=CCDK%20Team%20licence">fayazdevinbox@uberip.com</a>.</p>
+</div>
+
+<h2>What is in it</h2>
+
+<h3>10 subagents</h3>
+<p><code>bug-hunter</code> finds the root cause instead of the symptom — it reproduces first, then traces the bad
+value back to where it <em>first</em> went wrong. <code>code-reviewer</code> reports real defects and skips style
+opinions. <code>test-writer</code> matches the framework you already use, runs the suite and pastes the real output.
+Plus <code>refactorer</code>, <code>api-designer</code>, <code>sql-tuner</code>, <code>perf-profiler</code>,
+<code>dependency-auditor</code>, <code>migration-planner</code>, <code>docs-writer</code>.</p>
+
+<h3>12 slash commands</h3>
+<p><span class="tag">/commit</span><span class="tag">/pr</span><span class="tag">/review</span><span class="tag">/debug</span><span class="tag">/fix-ci</span><span class="tag">/tests</span><span class="tag">/security</span><span class="tag">/cleanup</span><span class="tag">/explain</span><span class="tag">/scaffold</span><span class="tag">/onboard</span><span class="tag">/changelog</span></p>
+<p>They read your real diff before they act. <code>/commit</code> matches your repo's existing message style and
+refuses to commit a secret. <code>/review</code> greps for every caller of every changed signature — the check
+human reviewers always skip.</p>
+
+<h3>7 hooks — the part that can actually stop Claude</h3>
+<p>Hooks are the only piece of Claude Code that can <strong>block</strong> an action rather than politely ask.</p>
+<ul>
+<li><strong>typecheck-on-edit</strong> — runs <code>tsc --noEmit</code> / <code>mypy</code> / <code>go build</code> /
+<code>cargo check</code> after every edit and feeds the errors <em>straight back to Claude so it fixes them in the
+same turn</em>. The highest-value file in the pack.</li>
+<li><strong>guard-destructive</strong> — blocks <code>rm -rf /</code>, <code>git reset --hard</code>,
+<code>git clean -fd</code>, force-push to main, <code>DROP TABLE</code>, <code>DELETE</code> with no
+<code>WHERE</code>, <code>terraform destroy</code>, fork bombs.</li>
+<li><strong>guard-secrets</strong> — refuses to read or write <code>.env</code>, <code>id_rsa</code>,
+<code>*.pem</code>, <code>.aws/credentials</code>.</li>
+<li><strong>format-on-edit</strong> — 10 languages: biome, prettier, ruff, black, gofmt, rustfmt, rubocop, shfmt,
+dart, swiftformat.</li>
+<li>plus <strong>protect-main</strong>, <strong>log-session</strong>, <strong>notify-done</strong>.</li>
+</ul>
+<p><strong>Every hook in this pack was executed against real hook payloads before it shipped</strong> — that testing
+found and fixed two genuine bugs. The docs give you the exact commands to verify it yourself in two minutes:</p>
+<pre><code>printf '{"tool_input":{"command":"rm -rf /"}}' | ./guard-destructive.sh; echo $?
+# 2 = blocked, 0 = allowed</code></pre>
+
+<h3>4 skills</h3>
+<p><code>ship-it</code> — the full pre-merge gate (build, typecheck, tests, review, security, leftovers, migration
+safety) that stops at the first blocker. <code>incident-triage</code> — production is down right now: stop the
+bleeding, then root-cause. <code>spec-to-plan</code>. <code>legacy-rescue</code> — writes characterisation tests
+before you touch untested legacy code, so you can tell a fix from a regression.</p>
+
+<h3>6 CLAUDE.md templates</h3>
+<p>Universal · Next.js + TypeScript · Python + FastAPI · Node API · Flutter · Monorepo. Each one with a commands
+table and a real <strong>Gotchas</strong> section.</p>
+
+<h3>A one-page cheatsheet</h3>
+<p>CLAUDE.md vs commands vs subagents vs skills vs hooks — which to use when, the exact frontmatter for each, every
+hook event, what exit code 2 actually does, and the precedence rules.</p>
+
+<h2>Install</h2>
+<pre><code>unzip claude-code-drop-in-kit.zip
+cd claude-code-drop-in-kit
+bash install.sh            # this project
+bash install.sh --global   # ~/.claude, every project</code></pre>
+<p>Then restart Claude Code. Requirements: Claude Code, bash, git, python3. Windows works under WSL.</p>
+
+<h2>Licence</h2>
+<p>One developer, unlimited personal and commercial projects, forever. Modify it freely. Don't resell or
+redistribute it. The free Lite subset on GitHub is MIT and you can do anything you like with that.</p>
+
+<hr>
+<p class="muted">Built by <a href="https://github.com/p32929">Fayaz Bin Salam (@p32929)</a>.
+Questions or a bug? <a href="https://github.com/p32929/claude-code-starter-kit/issues">Open an issue</a>.</p>
+
+</div>
+<script>
+document.getElementById('paid').addEventListener('click',function(e){
+  e.preventDefault();
+  document.getElementById('dl').style.display='block';
+  this.style.display='none';
+});
+</script>
+</body>
+</html>
