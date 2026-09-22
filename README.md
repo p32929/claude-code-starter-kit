@@ -113,8 +113,12 @@ This repo is the free subset. The complete **Claude Code Drop-In Kit** is **39 f
 - **6 CLAUDE.md templates** — universal, Next.js + TypeScript, Python + FastAPI, Node API,
   Flutter, monorepo — each with a real Gotchas section
 
-**→ [Get the full kit](https://p32929.gumroad.com/l/ccdk)** — $49 one-time, one developer,
-unlimited projects, personal and commercial. No subscription, no seat count, no expiry.
+**→ [Get the full kit](https://p32929.github.io/claude-code-starter-kit/)** — $50 one-time, one
+developer, unlimited projects, personal and commercial. No subscription, no seat count, no expiry.
+
+Want it fitted to your own codebase? A [Setup Sprint](https://p32929.github.io/claude-code-starter-kit/#want-it-fitted-to-your-codebase-instead)
+is $249 — you send a repo, you get a `CLAUDE.md`, hooks and commands back that already know your
+stack. Team licence for a whole company is $499.
 
 ## Licence
 
